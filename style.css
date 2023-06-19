@@ -83,12 +83,16 @@ button#menu-button{
   font-size: 36px;
   color: rgb(113, 124, 66);
   font-weight: lighter;
-  
+  padding-top: 6rem;
 }
 
 .title{
   width: 100%;
   text-align: center;
+}
+.title h1{
+  font-size: 5rem;
+  
 }
 
 .subtitle{
@@ -101,6 +105,7 @@ button#menu-button{
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding-top: 3rem;
 }
 
 .sun-img{
@@ -111,7 +116,9 @@ button#menu-button{
 
 #about{
   color: rgb(113, 124, 66);
-  text-align: left;
+}
+#aboutText{
+  padding-top: 12rem;
   font-size: 25px;
 }
 .portfolio{
@@ -119,17 +126,20 @@ button#menu-button{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
 }
+#portraitContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 #portrait{
-  height: 75%;
+  aspect-ratio: 375/667;
+  height: clamp(20rem, 75vh, 60rem);
 }
 .about-content{
   height: 100vh;
-}
-.about-content .col-4{
-  height: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 #contact .col-4{
   display: flex;
@@ -139,6 +149,7 @@ button#menu-button{
 }
 .card{
   width: 25rem;
+  background: none !important;
 
 }
 .link-card{
@@ -151,4 +162,11 @@ button#menu-button{
 }
 .link-card .card:hover{
   transform: scale(1.1);
+}
+img[alt="gmail logo"]{
+  aspect-ratio: 1/1;
+}
+#watermark{
+  width: 10rem;
+
 }
