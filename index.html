@@ -42,17 +42,18 @@
           <img id="portrait" src="1A41D582-FCAC-4329-A47A-7958B8EE6E69 (1).jpg" alt="portrait">
         </div>
       </div>
-      <div class="col-8">
-        <div id="aboutText"><p>Hi, I'm Valeria.
+      <div class="col-xl-8 col-md-12">
+        <div id="aboutText">
+          <p>Hi, I'm Valeria.
           I'm a 21 years old student of graphic design with the passion for arts.
-        </p>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="contact" class="sect-container row" >
-    <div class="col-4">
+    <div class="col">
       <a href="https://www.instagram.com/valeria_savio/" target="_blank" class="link-card">
         <div class="card">
           <img src="instagram-png-instagram-png-logo-1455-3-1024x1024.png" class="card-img-top" alt="ig logo">
@@ -63,8 +64,8 @@
         </div>
       </a>
     </div>
-    <div class="col-4">
-      <a href="#" target="_blank" class="link-card">
+    <div class="col">
+      <a class="link-card">
         <div class="card">
           <img src="WhatsApp.svg.png" class="card-img-top" alt="whatsapp logo">
           <div class="card-body">
@@ -74,10 +75,10 @@
         </div>
       </a>
     </div>
-    <div class="col-4">
-      <a href="valeriasavio02@gmail.com" type="email" target="_blank" class="link-card">
+    <div class="col">
+      <a id="modalBtn" class="link-card">
         <div class="card">
-          <img src="Gmail-logo.png" class="card-img-top" alt="gmail logo">
+          <img src="Gmail_Logo_512px.png" class="card-img-top" alt="gmail logo">
           <div class="card-body">
             <h5 class="card-title">Gmail</h5>
             <p class="card-text">Mandami un email </p>
@@ -85,6 +86,7 @@
         </div>
       </a>
     </div>
+
     <div class="col-xxl-12">
       <div class="row justify-content-center ">
         <img id="watermark"  src="watermark.png" alt="logo">
@@ -96,5 +98,49 @@
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
+
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="formModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Message" aria-label="Text">
+          </div>
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

@@ -42,7 +42,7 @@ button#menu-button{
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 4;
   top: 0;
 
 }
@@ -75,6 +75,7 @@ button#menu-button{
 .sect-container{
   min-height: 100vh;
   align-items: center;
+  height: auto;
 }
 
 #home { 
@@ -109,9 +110,8 @@ button#menu-button{
 }
 
 .sun-img{
-  height: 70vh;
-  max-height: 1000px;
-  width: auto;
+  width: 22vw;
+  min-width: 300px;
 }
 
 #about{
@@ -136,12 +136,13 @@ button#menu-button{
 }
 #portrait{
   aspect-ratio: 375/667;
-  height: clamp(20rem, 75vh, 60rem);
+  width: 19vw;
+  min-width: 250px;
 }
 .about-content{
   height: 100vh;
 }
-#contact .col-4{
+#contact .col{
   display: flex;
   flex-flow: row;
   align-content: center;
@@ -150,7 +151,6 @@ button#menu-button{
 .card{
   width: 25rem;
   background: none !important;
-
 }
 .link-card{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -168,5 +168,57 @@ img[alt="gmail logo"]{
 }
 #watermark{
   width: 10rem;
+}
+
+.slide-cont{
+  height: min-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.slide{
+  width: 40rem;
+}
+
+@media screen and (max-width: 700px) {
+  #menu {
+    width: 70vw;
+    right: -200vw;
+  }
+  #home{
+    padding-bottom: 2rem;
+  }
+
+  .about-content{
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+  #aboutText{
+    padding-top: 2rem;
+  }
+  .link-card{
+    transform: scale(0.8);
+  }
+  #contact{
+    flex-direction: column;
+  }
+  .slide{
+    width: auto;
+  }
+
+  .slide-cont{
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 2rem;
+    padding-right: 0;
+  }
+  #slideMid{
+    flex-direction: column-reverse !important;
+  }
 
 }
